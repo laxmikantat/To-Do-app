@@ -16,7 +16,8 @@ COPY app/requirements.txt ./requirements.txt
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy the rest of the code
-COPY . .
+# Copy rest of the code
+COPY app/ ./app/
 
 RUN useradd -m appuser
 USER appuser
