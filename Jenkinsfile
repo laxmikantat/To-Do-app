@@ -1,5 +1,7 @@
 pipeline {
-    agent { label 'docker' } // Run on your Docker-enabled agent
+    """agent { label 'docker' }"""
+    agent any
+     // Run on your Docker-enabled agent
     environment {
         DOCKERHUB_CREDENTIALS = 'dockerhub-credentials'
         IMAGE_NAME = 'laxmikant1109/my-to-do'
