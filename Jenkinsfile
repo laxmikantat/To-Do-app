@@ -1,5 +1,4 @@
 pipeline {
-    """agent { label 'docker' }"""
     agent any
      // Run on your Docker-enabled agent
     environment {
